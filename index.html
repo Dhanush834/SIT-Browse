@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BROWSE 2K23</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/aa97cb4b5b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <nav class="primary-nav flex">
+
+            <div class="nav-logo">
+                <h2 class="logo-text"> BR<span><img src="imgs\logo.svg" alt="globe-pic" class="globe-icon"></span>WSE
+                </h2>
+            </div>
+
+            <ul class="nav-items">
+                <li class="list-items" data-visibility="true"><a href="">Home</a></li>
+                <li class="list-items" data-visibility="true"><a href="">Events</a></li>
+                <li class="list-items" data-visibility="true"><a href="">About</a></li>
+                <li class="list-items none"><a href="">Register</a></li>
+            </ul>
+
+            <span class="Toggle-icon" id="responsive" onclick="openNav()">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">Events</a>
+                <a href="#">About</a>
+                <a href="#">Register</a>
+            </div>
+
+        </nav>
+
+
+
+    </header>
+
+
+    <!-- ------------------------------------------------------------------------------------------Section 1     -->
+
+    <section class="landing-page">
+
+        <div class="landing-grid">
+
+            <div class="intro">
+
+
+                <div class="info">
+
+                    <h3 class="info-1">SIT's Official</h3>
+                    <h1 class="info-2">TECHNICAL  FEST</h1>
+                    <p class="info-3">of CSE , ISE , AIML , MCA and AI&DS</p>
+
+                </div>
+
+
+                <div>
+                    <p class="calender-con"> <img src="imgs\calendar.png" alt="calender" class="calender">11-14 July 2023</p>
+                </div>
+
+
+                <div class="launch-time">
+
+                    <div>
+                        <p id="day">00</p>
+                        <span class="time-text">Days</span>
+                    </div>
+
+                    <span class="dot">:</span>
+
+                    <div>
+                        <p id="hours">00</p>
+                        <span class="time-text">Hours</span>
+                    </div>
+
+                    <span class="dot" >:</span>
+
+                    <div>
+                        <p id="min">00</p>
+                        <span class="time-text">Min</span>
+                    </div>
+
+                    <span class="dot">:</span>
+
+                    <div>
+                        <p id="sec">00</p>
+                        <span class="time-text">Sec</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cod-img-container">
+                <img src="imgs\coding php.svg" class="cod-img" alt="">
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- ------------------------------------------------------------------------------------Cards [Events] -->
+
+
+    <section class="events">
+
+        <h1 class="event-title">EVENTS ORGANISED</h1>
+
+        <!-- <span class="Toggle-icon" id="destop-nav" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Events</a>
+            <a href="#">About</a>
+            <a href="#">Register</a>
+        </div> -->
+
+
+        <div class="card">
+
+            <div class="card-box" id="card-1">
+
+                <div class="empty" ></div>
+
+                <div class="card1-content">
+                    <h2 class="event-name" id="event-name">LIFE EXTENTION</h2>
+                    <div class="event-info">
+                        <p id="p-clr">This will be an ideal platform, where budding gamers can explore and develop their skills and
+                            use this as a good practice session.</p>
+                        <ul>
+                            <li>Gaming is a very popular frenzy and we now have hundreds of gamers.</li>
+                            <li>They need more exposure to hone their skills and compete with the best in the college.
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn card1-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="card-box" id="card-2">
+
+                <div class="empty"></div>
+
+                <div class="card1-content">
+                    <h2 class="event-name" id="event-name">MIND SNARE</h2>
+                    <div class="event-info">
+                        <p id="p-clr">It is a quiz contest between different teams on topics of technology, programming and
+                            technical aspects.</p>
+                        <ul>
+                            <li>Register in members of 2 per Team to enter in the contest and win the prizes.</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-box" id="card-3">
+
+                <div class="empty"></div>
+
+                <div class="card1-content">
+                    <h2 class="event-name" id="event-name">CYBER ETYMOLOGY</h2>
+                    <div class="event-info">
+                        <p id="p-clr">It is a quiz contest between different teams on topics of technology, programming and
+                            technical aspects.</p>
+                        <ul>
+                            <li>Register in members of 2 per Team to enter in the contest and win the prizes.</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-3">Explore</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-box" id="card-4">
+
+                <div class="empty"></div>
+
+                <div class="card1-content">
+                    <h2 class="event-name" id="event-name">BYTE SURGE</h2>
+                    <div class="event-info">
+                        <p id="p-clr">A programming competition that involves giving a set of logical or mathematical problems to
+                            the contestants.The contestants are required to write computer programs capable of solving
+                            each problem.</p>
+                        <ul>
+                            <li>Register in members of 2 per Team to enter in the contest and win the prizes.</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="card-box" id="card-5">
+
+                <div class="empty"></div>
+
+                <div class="card1-content">
+                    <h2 class="event-name" id="event-name">PRASTUTI - PAPER PRESENTATION</h2>
+                    <div class="event-info">
+                        <p id="p-clr">Paper Presentation is all about how you put your topic or present your topic in front of the
+                            audience.</p>
+                        <ul>
+                            <li>They see the way you present your topic, the way you put your points, your presentation
+                                style, your language and how promptly and effectively you answer their questions.</li>
+                        </ul>
+                    </div>
+                    <button class="btn card1-btn btn-5">Explore</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

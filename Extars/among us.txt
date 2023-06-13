@@ -1,0 +1,59 @@
+Title : Code Among Us
+
+
+
+
+Register with individual participants then group them randomly like how you picked a random opponent in clash of code
+
+A group of 5 with random players is selected then 4 members are crew mates and 1 will be the imposter.
+
+
+
+
+Role of crew mates:
+
+we have to design a spaceship which is initially damaged , the crew mates once entered the spaceship have to navigate to the different parts of it.
+
+In each part of the spaceship there will be a coding problem and they solve the problem in the given time if they pass spaceship gets healed , they have to work until the spaceship is 100% fixed.
+if they dont solve the given problem in time the problem will refresh from start.
+
+
+
+
+Role of imposter :
+
+Imposter is given coding problems by which if he solves the problem the sabotage option will fill then he can sabotage the spaceship and trouble the crewmates.
+Imposter has an option of sabotage in which a random question will rise in the screen of crew mates by freezing all the activity of crew mates. The crew mates have to solve it in group and question will be a bit difficult.
+
+
+
+Game conditions :
+
+    Each round will be of 15-20 min.
+
+    There will be 3 rounds.
+
+    How to decide winner:
+
+        There will be two kind of winners:
+
+        1. Best Imposter :
+
+            which is decided by the number of sabotage he made in all three rounds. if any imposter get ties with the points go with the time taken.   
+            
+        2. Best Crew mates :
+
+            which is decided by the total percentage of spaceship repaired in all three rounds if team gets tied in percentage go with the time taken.
+
+Additional Options :
+
+    Emergency meeting :
+
+        In which crew mates can discuss a problem solution with his mates and take help and there will be one Emergency in each round.
+
+    Swaping Imposter :
+
+        If the imposter is not able to solve the questions in one round then he can swap the role with any of the crew mate who is confident enough to win the imposter award after 1 round.
+
+        This option is only available in first round.    
+

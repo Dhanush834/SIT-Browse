@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia&display=swap');
+
+
+/* ---------------------------------------------------------------------------------------------tags */
+
+
+
+:root
+{
+    --body-theme:  #fff  ; /*rgb(4, 36, 61) #202124*/
+    --card-clr:#202124;
+    --heading-clr:#211E1E;
+    --light-blue:rgb(131, 182, 209);
+    --normal-blue:#1162FB;
+    --light-grey:#545454;
+    --btn-clr:linear-gradient(103.9deg, rgb(12, 166, 180) 3%, rgb(100, 51, 161) 93.9%);
+    
+
+    --heading-font : 'Anek Odia', sans-serif;
+    --specail-font:'Hammersmith One', sans-serif;
+    --font-for-numbers: 'Varela Round', sans-serif;
+    --body-font-family:'Montserrat', sans-serif;
+        
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    padding-inline: 5em;
+    /* background-color: var(--card-clr); */
+    transition: all 0.2s ease-in-out;
+}
+
+li{
+    list-style: none;
+    color: var(--body-theme);
+}
+
+
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+button.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 1em 3.5em;
+    background-size: 300% 300%;
+    border: none;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+    transition: 0.5s;
+    font-family: 'Varela Round';
+}
+
+.btn:hover {
+    background-position: right center;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------Navbar */
+
+.primary-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+h2.logo-text {
+    display: flex;
+    align-items: center;
+    color: var(--normal-blue);
+    font-family: var(--heading-font);
+    font-size: 2.5em;
+}
+
+.globe-icon {
+    color: #000;
+    height: 5vh;
+    aspect-ratio: 1/0.8;
+    margin-block-start: 13px;
+    margin-inline: -4px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-end: 2.5rem;
+}
+
+li.list-items {
+    font-size: 1.25rem;
+    font-family: var(--specail-font);
+    padding-inline: 25px;
+    border-right: 1.8px solid var(--normal-blue);
+    margin-block-end: 0.8em;
+}
+
+li.list-items.none {
+    border: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+ }
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #responsive{
+    display: none;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .Toggle-icon{
+    font-size:50px;
+    cursor:pointer;
+    position: fixed;
+  }
+
+  @media (max-width:50em) {
+
+    .primary-nav{
+        flex-direction: row-reverse;
+    }
+
+    body{
+        padding: 1.3rem;
+    }
+
+    #responsive {
+        display: inherit;
+        position: absolute;
+        left: 3rem;
+    }
+
+    .nav-items{
+        display: none;
+    }
+    
+    #destop-nav{
+        display: none;
+    }
+  }
+
+
+/* ------------------------------------------------------------------------------------------------1st page */
+
+.landing-page{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 13%, rgba(159,171,173,1) 100%);
+}
+
+.landing-grid{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.cod-img-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+img.cod-img {
+    height: 80vh;
+    width: 43vw;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block-end: 3rem;
+}
+
+h3.info-1 {
+    color: azure;
+    font-family: var(--font-for-numbers);
+    font-size: 1.5em;
+    margin-bottom: 4px;
+}
+
+h1.info-2{
+    color: var(--normal-blue);
+    font-size: 5.5em;
+    font-family: var(--heading-font);
+    letter-spacing: 2px;
+    line-height: 15vh;
+}
+
+p.info-3 {
+    color: var(--light-grey);
+    font-size: 1.3em;
+    margin-top: -25px;
+    padding-left: 14px;
+    font-family: var(--specail-font);
+    letter-spacing: 3.1px;
+}
+
+.launch-time {
+    display: flex;
+    margin: -10px;
+}
+
+
+.calender {
+    height: 5vh;
+}
+
+.calender-con {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1.5em 0px;
+    font-size: 1.5rem;
+    margin-inline-start: 0.5em;
+    font-family: var(--font-for-numbers);
+    color: snow;
+}
+
+
+
+.launch-time div {
+    flex-basis: 75px;
+    text-align: center;
+    margin-inline: 10px;
+    padding: 5px;
+}
+
+span.dot {
+    color: var(--normal-blue);
+    font-size: 3.5rem;
+    font-weight: 550;
+    align-items: center;
+    margin-block-start: -25px;
+    display: flex;
+}
+
+.launch-time .time-text {
+    color: var(--light-blue);
+    font-size: 1.25rem;
+    font-family: var(--body-font-family);
+    font-weight: bolder;
+}
+
+.launch-time div p {
+    font-size: 50px;
+    margin-bottom: -8px;
+    margin-left: 2px;
+    font-family: var(--font-for-numbers);
+    color: #F67280;
+}
+
+@media (max-width:1400px) and (min-width:1300px){
+    h1.info-2 {
+        font-size: 4.8em;
+        line-height: 12vh;
+    }
+    img.cod-img {
+        width: 40vw;
+    }
+}
+@media (max-width:1300px) and (min-width:1200px){
+    h1.info-2 {
+        font-size: 4.3em;
+        line-height: 12vh;
+    }
+}
+
+@media (max-width:1050px){
+    img.cod-img {
+        display: none;
+    }
+    .landing-grid {
+        display: grid;
+        grid-template-columns: 100% auto;
+    }
+    .intro{
+        margin-block: 5rem;
+    } 
+}
+
+@media (max-width:800px) and (min-width:680px)
+{
+    .landing-grid {
+        padding-left: 3em;
+    }
+
+    h1.info-2 {
+    font-size: 4.5em;
+    }
+
+}
+
+@media (max-width:600px) {
+    h1.info-2 {
+        color: var(--normal-blue);
+        font-size: 3.5em;
+    }
+    h3.info-1 {
+        font-size: 1.3em;
+        margin-bottom: -8px;
+        margin-inline-start: 8px;
+    }
+
+    p.info-3 {
+        color: var(--light-grey);
+        font-size: 1.3em;
+        margin-top: -35px;
+        padding-left: 6px;
+    }
+
+    .sidenav a {
+        padding: 40px 8px 20px 80px;
+        font-size: 2rem;
+        font-family: 'Montserrat';
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: -40px;
+        right: 25px;
+        font-size: 5rem;
+        margin-left: 50px;
+    }
+
+    #mySidenav{
+        padding-top: 6rem;
+    }
+
+
+
+}
+
+@media (max-width:450px){
+    h3.info-1 {
+        font-size: 1.3em;
+        margin-bottom: -18px;
+    }
+    h1.info-2 {
+        color: var(--normal-blue);
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 400px){
+    h1.info-2 {
+    font-size: 2.8em;
+    }
+}
+
+
+
+/* ******************************************************Card CSS */
+
+section.events {
+    padding-bottom: 8rem;
+}
+
+#p-clr{
+    color: #fff;
+}
+
+.event-title {
+    color: var(--heading-clr);
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--heading-font);
+    padding-block: 1em;
+    }
+
+.card {
+        box-shadow: 0 0 25px #000;
+        height: 55vh;
+        margin-bottom: 10%;
+    }
+
+.card-box{
+    display: grid;
+    grid-template-columns: 50% auto;
+    background-size: cover;
+    height: 55vh;
+}
+
+@media (max-width:45em){
+
+    .event-title{
+        padding-block: 0;
+    }
+
+    .card-box {
+        display: grid;
+        grid-template-rows: 45% auto;
+        grid-template-columns: auto;
+    }
+    .card {
+        box-shadow: 0 0 25px #000;
+        height: 55vh;
+        margin-bottom: 10%;
+        margin: 6em 2em;
+    }
+
+    body {
+        padding: 0em 0px 0 1.5em;
+        margin-right: 15px;
+    }
+
+    .event-info{
+        display: none;
+    }
+
+    #card-1{
+        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(https://cdn.bhdw.net/im/playerunknown-s-battlegrounds-pubg-mobile-helmet-guy-wallpaper-63408_w635.webp) !important ; 
+    } 
+
+    #card-2{
+        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(https://news.stanford.edu/wp-content/uploads/2018/05/SNAIL_banner.jpg) !important;
+    }
+
+    #card-3{
+        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url('/imgs/syber.svg') !important;
+    }
+
+    #card-4{
+        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(https://stcmalta.com/wp-content/uploads/2022/03/Art_objectorienteddesignandprogt-845x321.png) !important;
+    }
+
+    #card-5{
+        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(/imgs/presentation.svg) !important;
+    }
+
+    button.btn {
+        margin: 2em auto !important;
+    }
+    .card1-content {
+        padding: 1em;
+        text-align: center;
+    }
+
+    #event-name {
+        color: var(--light-blue);
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px){
+    .event-name {
+        font-size: 2rem !important;
+    }
+}
+
+
+
+#card-1{
+    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(https://cdn.bhdw.net/im/playerunknown-s-battlegrounds-pubg-mobile-helmet-guy-wallpaper-63408_w635.webp);
+}
+
+#card-2{
+    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(https://news.stanford.edu/wp-content/uploads/2018/05/SNAIL_banner.jpg);
+}
+
+#card-3{
+    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(/imgs/syber.svg);
+}
+
+#card-4{
+    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(https://stcmalta.com/wp-content/uploads/2022/03/Art_objectorienteddesignandprogt-845x321.png);
+}
+
+#card-5{
+    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(/imgs/presentation.svg);
+}
+
+.event-name{
+    color: var(--light-blue);
+    font-size: 3rem;
+    font-family: var(--specail-font);
+    margin-block-start: 0.5em;
+}
+
+.event-info {
+    padding: 1em 1em 1em 0;
+    font-size: 1.25rem;
+    line-height: 25px;
+    font-family: var(--body-font-family);
+}
+
+.event-info li {
+    list-style: circle;
+    font-size: 1rem;
+    margin-inline-start: 50px;
+    margin-block-start: 8px;
+}
+
+button.btn.card1-btn {
+    margin-block-start: -5px;
+}
+
