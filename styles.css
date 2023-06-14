@@ -9,6 +9,8 @@
 
 
 
+
+
 :root
 {
     --body-theme:  #fff  ; /*rgb(4, 36, 61) #202124*/
@@ -38,8 +40,10 @@
 }
 
 body{
+    background-color: var(--body-theme);
     padding-inline: 5em;
-    /* background-color: var(--card-clr); */
+    background-color: #f6f6f6;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
     transition: all 0.2s ease-in-out;
 }
 
@@ -52,7 +56,7 @@ li{
 
 a{
     text-decoration: none;
-    color:#fff;
+    color: var(--heading-clr);
 }
 
 button.btn {
@@ -207,10 +211,6 @@ li.list-items.none {
 
 /* ------------------------------------------------------------------------------------------------1st page */
 
-.landing-page{
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 13%, rgba(159,171,173,1) 100%);
-}
 
 .landing-grid{
     display: grid;
@@ -235,7 +235,7 @@ img.cod-img {
 }
 
 h3.info-1 {
-    color: azure;
+    color: var(--heading-clr);
     font-family: var(--font-for-numbers);
     font-size: 1.5em;
     margin-bottom: 4px;
@@ -276,7 +276,6 @@ p.info-3 {
     font-size: 1.5rem;
     margin-inline-start: 0.5em;
     font-family: var(--font-for-numbers);
-    color: snow;
 }
 
 
@@ -309,7 +308,6 @@ span.dot {
     margin-bottom: -8px;
     margin-left: 2px;
     font-family: var(--font-for-numbers);
-    color: #F67280;
 }
 
 @media (max-width:1400px) and (min-width:1300px){
@@ -480,7 +478,7 @@ section.events {
     }
 
     #card-3{
-        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url('/imgs/syber.svg') !important;
+        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url('imgs/syber.svg') !important;
     }
 
     #card-4{
@@ -488,7 +486,7 @@ section.events {
     }
 
     #card-5{
-        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(/imgs/presentation.svg) !important;
+        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url('imgs/presentation.svg') !important;
     }
 
     button.btn {
@@ -557,4 +555,3 @@ section.events {
 button.btn.card1-btn {
     margin-block-start: -5px;
 }
-
