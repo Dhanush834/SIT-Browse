@@ -747,15 +747,15 @@ button.btn.card1-btn {
 }
 
 #evt3-img{
-    background-image: url('imgs/syber.svg');
-}
-
-#evt4-img{
     background-image: url('/imgs/syber.svg');
 }
 
+#evt4-img{
+    background-image: url(https://stcmalta.com/wp-content/uploads/2022/03/Art_objectorienteddesignandprogt-845x321.png);
+}
+
 #evt5-img{
-    background-image: url('imgs/syber.svg');
+    background-image: url('imgs/presentation.svg');
 }
 
 
