@@ -11,50 +11,50 @@
 
 
 
-:root
-{
-    --body-theme:  #fff  ; /*rgb(4, 36, 61) #202124*/
-    --card-clr:#202124;
-    --heading-clr:#211E1E;
-    --light-blue:rgb(131, 182, 209);
-    --normal-blue:#1162FB;
-    --light-grey:#545454;
-    --btn-clr:linear-gradient(103.9deg, rgb(12, 166, 180) 3%, rgb(100, 51, 161) 93.9%);
-    
+:root {
+    --body-theme: #fff;
+    /*rgb(4, 36, 61) #202124*/
+    --card-clr: #202124;
+    --heading-clr: #211E1E;
+    --light-blue: rgb(131, 182, 209);
+    --normal-blue: #1162FB;
+    --light-grey: #545454;
+    --btn-clr: linear-gradient(103.9deg, rgb(12, 166, 180) 3%, rgb(100, 51, 161) 93.9%);
 
-    --heading-font : 'Anek Odia', sans-serif;
-    --specail-font:'Hammersmith One', sans-serif;
+
+    --heading-font: 'Anek Odia', sans-serif;
+    --specail-font: 'Hammersmith One', sans-serif;
     --font-for-numbers: 'Varela Round', sans-serif;
-    --body-font-family:'Montserrat', sans-serif;
-        
+    --body-font-family: 'Montserrat', sans-serif;
+
 }
 
+/*  */
 
-
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
-body{
+body {
     background-color: var(--body-theme);
     padding-inline: 5em;
-    background: rgb(235,235,235);
-    background: linear-gradient(180deg, rgba(235,235,235,1) 9%, rgba(167,176,177,1) 63%);
+    background: rgb(235, 235, 235);
+    background: linear-gradient(180deg, rgba(235, 235, 235, 1) 9%, rgba(167, 176, 177, 1) 63%);
     transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
 }
 
-li{
+li {
     list-style: none;
     color: var(--body-theme);
 }
 
 
 
-a{
+a {
     text-decoration: none;
     color: var(--heading-clr);
 }
@@ -82,12 +82,15 @@ button.btn {
     background-position: right center;
 }
 
+.btn > a {
+    color: #fff;
+}
 
 
 
 /* ----------------------------------------------------------------------------------Navbar */
 
-.primary-nav{
+.primary-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -115,7 +118,7 @@ h2.logo-text {
     margin-inline: -4px;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -144,65 +147,76 @@ li.list-items.none {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 10rem;
 }
-  
+
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 2rem 10px 15px 4rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2rem;
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-family: 'Montserrat';
 }
-  
+
 .sidenav a:hover {
     color: #f1f1f1;
- }
-  
+    
+}
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
     margin-left: 50px;
-  }
+    font-size: 5rem;
+}
 
-  #responsive{
+#responsive {
     display: none;
-  }
-  
-.Toggle-icon{
-    font-size:50px;
-    cursor:pointer;
+}
+
+.Toggle-icon {
+    font-size: 50px;
+    cursor: pointer;
     position: fixed;
-  }
+}
 
-  @media (max-width:50em) {
+@media (max-width:50em) {
 
-    .primary-nav{
-        flex-direction:reverse;
+    .primary-nav {
+        flex-direction: reverse;
     }
 
     #responsive {
-        display: inherit;
-        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
         right: 3rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
         top: 2rem;
+        border-radius: 100%;
+        width: 60px;
+        outline: none;
+        height: 60px;
+        box-shadow: 0 0 1rem var(--light-grey);
+        background: transparent;
+        top: 1.5rem;
     }
 
-    .nav-items{
+    .nav-items {
         display: none;
     }
-    
-  }
+
+}
 
 
 /* ------------------------------------------------------------------------------------------------1st page */
 
 
-.landing-grid{
+.landing-grid {
     display: grid;
     grid-template-columns: 50% auto;
 }
@@ -231,7 +245,7 @@ h3.info-1 {
     margin-bottom: 4px;
 }
 
-h1.info-2{
+h1.info-2 {
     color: var(--normal-blue);
     font-size: 5.5em;
     font-family: var(--heading-font);
@@ -310,7 +324,7 @@ section.events {
     padding-bottom: 8rem;
 }
 
-#p-clr{
+#p-clr {
     color: #fff;
 }
 
@@ -320,24 +334,24 @@ section.events {
     text-align: center;
     font-family: var(--heading-font);
     padding-block: 1em;
-    }
+}
 
 .card {
-        box-shadow: 0 0 25px #000;
-        height: 55vh;
-        margin-bottom: 10%;
-    }
+    box-shadow: 0 0 25px #000;
+    height: 55vh;
+    margin-bottom: 10%;
+}
 
-.card-box{
+.card-box {
     display: grid;
     grid-template-columns: 50% auto;
     background-size: cover;
     height: 55vh;
 }
 
-@media (max-width:45em){
+@media (max-width:45em) {
 
-    .event-title{
+    .event-title {
         padding-block: 0;
     }
 
@@ -351,7 +365,7 @@ section.events {
         box-shadow: 0 0 25px #000;
         height: 55vh;
         margin-bottom: 10%;
-        margin: 6em 2em;
+        margin: 6em 0em;
     }
 
     body {
@@ -359,33 +373,34 @@ section.events {
         margin-right: 15px;
     }
 
-    .event-info{
+    .event-info {
         display: none;
     }
 
-    #card-1{
-        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(https://cdn.bhdw.net/im/playerunknown-s-battlegrounds-pubg-mobile-helmet-guy-wallpaper-63408_w635.webp) !important ; 
-    } 
+    #card-1 {
+        background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(https://cdn.bhdw.net/im/playerunknown-s-battlegrounds-pubg-mobile-helmet-guy-wallpaper-63408_w635.webp) !important;
+    }
 
-    #card-2{
+    #card-2 {
         background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(https://news.stanford.edu/wp-content/uploads/2018/05/SNAIL_banner.jpg) !important;
     }
 
-    #card-3{
+    #card-3 {
         background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url('imgs/syber.svg') !important;
     }
 
-    #card-4{
+    #card-4 {
         background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url(https://stcmalta.com/wp-content/uploads/2022/03/Art_objectorienteddesignandprogt-845x321.png) !important;
     }
 
-    #card-5{
+    #card-5 {
         background-image: linear-gradient(to bottom, transparent -10em, var(--card-clr) 66%), url('imgs/presentation.svg') !important;
     }
 
     button.btn {
         margin: 2em auto !important;
     }
+
     .card1-content {
         padding: 1em;
         text-align: center;
@@ -397,27 +412,27 @@ section.events {
     }
 }
 
-#card-1{
+#card-1 {
     background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(https://cdn.bhdw.net/im/playerunknown-s-battlegrounds-pubg-mobile-helmet-guy-wallpaper-63408_w635.webp);
 }
 
-#card-2{
+#card-2 {
     background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(https://news.stanford.edu/wp-content/uploads/2018/05/SNAIL_banner.jpg);
 }
 
-#card-3{
-    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(/imgs/syber.svg);
+#card-3 {
+    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url('/imgs/syber.svg');
 }
 
-#card-4{
+#card-4 {
     background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(https://stcmalta.com/wp-content/uploads/2022/03/Art_objectorienteddesignandprogt-845x321.png);
 }
 
-#card-5{
+#card-5 {
     background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(/imgs/presentation.svg);
 }
 
-.event-name{
+.event-name {
     color: var(--light-blue);
     font-size: 3rem;
     font-family: var(--specail-font);
@@ -447,15 +462,15 @@ button.btn.card1-btn {
 
 
 
-@media (max-width:1440px){
+@media (max-width:1440px) {
     h1.info-2 {
         font-size: 4.5rem;
         line-height: 15vh;
     }
 
-   @media (max-width:1250px) {
+    @media (max-width:1250px) {
         h1.info-2 {
-        font-size: 4rem;
+            font-size: 4rem;
         }
 
         h3.info-1 {
@@ -467,54 +482,61 @@ button.btn.card1-btn {
             height: 80vh;
             width: 40vw;
         }
-   }
+    }
 
-   @media (max-width:1100px){
-    h1.info-2 {
-        font-size: 3.5rem;
+    @media (max-width:1100px) {
+        h1.info-2 {
+            font-size: 3.5rem;
+        }
+
+        p.info-3 {
+            letter-spacing: 0.1px;
+        }
+
+        .launch-time div p {
+            font-size: 45px;
+        }
     }
-    p.info-3 {
-        letter-spacing: 0.1px;
-    }
-    .launch-time div p {
-        font-size: 45px;
-    }
-   }
 }
 
 
 
-@media (max-width:1020px){
+@media (max-width:1020px) {
     h3.info-1 {
         font-size: 1.25em;
         margin-bottom: 16px;
     }
+
     h1.info-2 {
         font-size: 4.5em;
         letter-spacing: 2px;
         line-height: 1;
         margin-bottom: 0.2em;
     }
+
     img.cod-img {
         height: 80vh;
         width: 44vw;
         padding-bottom: 5em;
     }
+
     p.info-3 {
         font-size: 1.2em;
         margin-top: -25px;
         padding-left: 0px;
         letter-spacing: 0.4px;
     }
+
     section.landing-page {
         padding-block-start: 3em;
     }
+
     h3.info-1 {
         font-size: 1.25em;
         margin-bottom: 16px;
     }
 
-    .event-info > ul > li {
+    .event-info>ul>li {
         display: none;
     }
 
@@ -530,10 +552,11 @@ button.btn.card1-btn {
         font-size: 1.1rem;
     }
 
-    @media (max-width:920px){
+    @media (max-width:920px) {
         img.cod-img {
             display: none;
         }
+
         .landing-grid {
             display: grid;
             grid-template-columns: 90% auto;
@@ -541,33 +564,62 @@ button.btn.card1-btn {
     }
 }
 
-@media (max-width:600px){
+@media (max-width:600px) {
     section.landing-page {
         padding-block-start: 3em;
         padding-inline-start: 0rem;
     }
+
     .card1-content {
         padding: 0;
         text-align: center;
     }
 
-    #card-5 > .card1-content > #event-name{
+    #card-5>.card1-content>#event-name {
         font-size: 2.2rem;
         margin-bottom: -1em;
     }
 
     .card {
         margin-bottom: 10%;
-        margin: 5em 2em auto auto;
+        margin: 5em 0em auto auto;
+        height: 46vh;
     }
 
     .event-title {
         padding-block-start: 1em;
         font-size: 2.5em;
     }
+
+    .card-box{
+        height: 46vh;
+    }
+
+    /* .info-2 > span{
+        position: relative;
+    }
+    
+    .info-2 > span::after {
+        content: "";
+        border-left:2px solid var(--card-clr);
+        position: absolute;
+        left: 0px;
+        top:10px;
+        height: 60%;
+        width: 100%;
+        background: #eaeaea;
+        animation: typing 1.5s steps(10) infinite;
+    }
+    
+    @keyframes typing {
+        100%{
+            left:100%;
+        }
+    } */
+
 }
 
-@media (max-width:450px){
+@media (max-width:450px) {
     h2.logo-text {
         font-size: 2.2em;
     }
@@ -577,7 +629,7 @@ button.btn.card1-btn {
     }
 
     #card-3 .card1-content {
-        margin-top: -4em;
+        margin-top: -1em;
     }
 
     .launch-time {
@@ -587,8 +639,7 @@ button.btn.card1-btn {
 
 }
 
-@media (max-width:390px)
-{
+@media (max-width:390px) {
     h2.logo-text {
         font-size: 2em;
     }
@@ -597,12 +648,14 @@ button.btn.card1-btn {
         font-size: 1.2em;
         margin-bottom: 16px;
     }
+
     h1.info-2 {
         font-size: 3.8em;
         letter-spacing: 2px;
         line-height: 1;
         margin-bottom: 0.2em;
     }
+
     .calender-con {
         margin-inline-start: 0;
     }
@@ -616,37 +669,39 @@ button.btn.card1-btn {
     }
 
     .card {
-        margin: 5em 1em auto auto;
+        margin: 5em 0em auto auto;
     }
 }
 
-@media (max-width:375px){
+@media (max-width:375px) {
     h1.info-2 {
         font-size: 3.2em;
     }
+
     p.info-3 {
         letter-spacing: -0.6px;
     }
 }
 
-@media (max-width:355px){
+@media (max-width:355px) {
     .launch-time div {
         margin-inline: 3px;
     }
 }
 
-@media (max-width:338px){
+@media (max-width:338px) {
     #event-name {
         color: var(--light-blue);
         font-size: 2rem;
     }
-    #card-5 > .card1-content > #event-name {
+
+    #card-5>.card1-content>#event-name {
         font-size: 1.5rem;
         margin-bottom: -1em;
     }
 }
 
-@media (max-width:310px){
+@media (max-width:310px) {
     h1.info-2 {
         font-size: 2.8em;
         margin-bottom: 18px;
@@ -656,6 +711,7 @@ button.btn.card1-btn {
         font-size: 1em;
         margin-bottom: 16px;
     }
+
     p.info-3 {
         letter-spacing: 0.4px;
         font-size: 1em;
@@ -673,5 +729,160 @@ button.btn.card1-btn {
     .launch-time div p {
         font-size: 1.8rem;
     }
-       
+}
+
+
+/* -----------------------------------------------------------------------------------Event Page */
+
+.evt-img{
+    height: 60vh;
+    width: 100%;
+    background-image: url(https://cdn.bhdw.net/im/playerunknown-s-battlegrounds-pubg-mobile-helmet-guy-wallpaper-63408_w635.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#evt2-img{
+    background-image: url(https://news.stanford.edu/wp-content/uploads/2018/05/SNAIL_banner.jpg);
+}
+
+#evt3-img{
+    background-image: url('/imgs/syber.svg');
+}
+
+#evt4-img{
+    background-image: url('/imgs/syber.svg');
+}
+
+#evt5-img{
+    background-image: url('/imgs/syber.svg');
+}
+
+
+.evt-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+h1.evt-heading {
+    font-size: 3.5rem;
+    font-family: var(--heading-font);
+    color: var(--card-clr);
+}
+
+button.btn.Reg-btn {
+    margin: -25px 0 0 0;
+}
+
+.evt-para {
+    font-size: 1.7rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    color: #000;
+    font-family: 'Anek Odia';
+}
+
+
+.reg-info {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding: 1em 0 5rem 0;
+}
+
+.rule p, .fee p, .contact p {
+        font-family: 'Varela Round';
+        font-weight: 500;
+}
+
+h2.reg-info-heading {
+        color: var(--normal-blue);
+        font-weight: bolder;
+        font-family: var(--body-font-family);
+}
+
+.btn.Reg-btn.mobile-btn{
+    display: none;
+    
+}
+
+@media (max-width:1150px){
+    .reg-info {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:1025px){
+    .reg-info {
+        font-size: 1.15rem;
+    }
+
+    .evt-para {
+    font-size: 1.5rem;
+    }
+}
+
+@media (max-width:850px){
+    h1.evt-heading {
+        font-size: 3rem;
+    }
+    button.btn {
+        font-size: 16px;
+        margin: 9px;
+        padding: 1em 3em;
+        background-size: 300% 300%;
+        border: none;
+        color: white;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+        background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+        transition: 0.5s;
+        font-family: 'Varela Round';
+    }
+}
+
+@media (max-width:650px){
+    
+    .evt-img {
+    height: 40vh;
+    }
+
+    .evt-para {
+        font-size: 1.4rem;
+    }
+
+    .evt-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 2em;
+        flex-direction: column;
+    }
+
+    .reg-info {
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: space-between;
+        padding: 1em 0 5rem 0;
+        row-gap: 1em;
+        flex-direction: column;
+    }
+
+    button.btn.Reg-btn.desptop-btn {
+        display: none;
+    }
+
+    .btn.Reg-btn.mobile-btn{
+        display: inline-flex;
+    }
+
+}
+
+@media (max-width:430px){
+    h1.evt-heading {
+        text-align: center;
+        font-size: 3rem;
+    }
 }

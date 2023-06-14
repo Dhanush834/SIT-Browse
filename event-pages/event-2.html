@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <header>
+
+        <nav class="primary-nav flex">
+
+            <div class="nav-logo">
+                <h2 class="logo-text"> BR<span><img src="/imgs/logo.svg" alt="globe-pic" class="globe-icon"></span>WSE
+                </h2>
+            </div>
+
+            <ul class="nav-items">
+                <li class="list-items" data-visibility="true"><a href="/index.html">Home</a></li>
+                <li class="list-items" data-visibility="true"><a href="/index.html">Events</a></li>
+                <li class="list-items" data-visibility="true"><a href="">About</a></li>
+                <li class="list-items none"><a href="">Register</a></li>
+            </ul>
+
+            <span class="Toggle-icon" id="responsive" onclick="openNav()">&#9776;</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/index.html">Home</a>
+                <a href="/index.html">Events</a>
+                <a href="#">About</a>
+                <a href="#">Register</a>
+            </div>
+
+        </nav>
+
+
+
+    </header>
+
+
+<!-- --------------------------------------------------------------------------------------------------main -->
+
+    <div class="evt-main">
+
+        <div class="evt-img" id="evt2-img">
+            
+        </div>
+
+        <div class="evt-head">
+            <h1 class="evt-heading">MIND SNARE</h1>
+            <button class="btn Reg-btn desptop-btn">Register</button>
+        </div>
+
+       <div class="evt-para">
+            <p>A quiz contest between different teams focusing on topics of technology, programming, and technical aspects that tests participants' knowledge and skills in these areas.</p>
+            <p>The contest is designed to challenge teams to showcase their understanding of various technological concepts, programming languages, tools, and other technical aspects.</p>
+        </div>
+
+        <div class="reg-info">
+
+            <div class="rule">
+                <h2 class="reg-info-heading">Rule:</h2>
+                <p>2 members per team</p>
+            </div>
+
+            <div class="fee">
+                <h2 class="reg-info-heading">Registration fees:</h2>
+                <p>₹50.00</p>
+            </div>
+
+            <div class="contact">
+                <h2 class="reg-info-heading">For more details, contact:</h2>
+                <p>Dr. H S Vijay Kumar</p>
+                <p>Phone: 9844521479</p>
+            </div>
+
+            <div>
+                <button class="btn Reg-btn mobile-btn">Register</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
