@@ -31,7 +31,7 @@ var x = setInterval(()=>{
 
 //nav bar 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
+    document.getElementById("mySidenav").style.width = "300px";
 }
   
 function closeNav() {

@@ -42,8 +42,8 @@
 body{
     background-color: var(--body-theme);
     padding-inline: 5em;
-    background-color: #f6f6f6;
-    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+    background: rgb(235,235,235);
+    background: linear-gradient(180deg, rgba(235,235,235,1) 9%, rgba(167,176,177,1) 63%);
     transition: all 0.2s ease-in-out;
 }
 
@@ -172,12 +172,7 @@ li.list-items.none {
     display: none;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-  .Toggle-icon{
+.Toggle-icon{
     font-size:50px;
     cursor:pointer;
     position: fixed;
@@ -186,26 +181,21 @@ li.list-items.none {
   @media (max-width:50em) {
 
     .primary-nav{
-        flex-direction: row-reverse;
-    }
-
-    body{
-        padding: 1.3rem;
+        flex-direction:reverse;
     }
 
     #responsive {
         display: inherit;
         position: absolute;
-        left: 3rem;
+        right: 3rem;
+        font-size: 2rem;
+        top: 2rem;
     }
 
     .nav-items{
         display: none;
     }
     
-    #destop-nav{
-        display: none;
-    }
   }
 
 
@@ -310,104 +300,7 @@ span.dot {
     font-family: var(--font-for-numbers);
 }
 
-@media (max-width:1400px) and (min-width:1300px){
-    h1.info-2 {
-        font-size: 4.8em;
-        line-height: 12vh;
-    }
-    img.cod-img {
-        width: 40vw;
-    }
-}
-@media (max-width:1300px) and (min-width:1200px){
-    h1.info-2 {
-        font-size: 4.3em;
-        line-height: 12vh;
-    }
-}
 
-@media (max-width:1050px){
-    img.cod-img {
-        display: none;
-    }
-    .landing-grid {
-        display: grid;
-        grid-template-columns: 100% auto;
-    }
-    .intro{
-        margin-block: 5rem;
-    } 
-}
-
-@media (max-width:800px) and (min-width:680px)
-{
-    .landing-grid {
-        padding-left: 3em;
-    }
-
-    h1.info-2 {
-    font-size: 4.5em;
-    }
-
-}
-
-@media (max-width:600px) {
-    h1.info-2 {
-        color: var(--normal-blue);
-        font-size: 3.5em;
-    }
-    h3.info-1 {
-        font-size: 1.3em;
-        margin-bottom: -8px;
-        margin-inline-start: 8px;
-    }
-
-    p.info-3 {
-        color: var(--light-grey);
-        font-size: 1.3em;
-        margin-top: -35px;
-        padding-left: 6px;
-    }
-
-    .sidenav a {
-        padding: 40px 8px 20px 80px;
-        font-size: 2rem;
-        font-family: 'Montserrat';
-        display: block;
-        transition: 0.3s;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: -40px;
-        right: 25px;
-        font-size: 5rem;
-        margin-left: 50px;
-    }
-
-    #mySidenav{
-        padding-top: 6rem;
-    }
-
-
-
-}
-
-@media (max-width:450px){
-    h3.info-1 {
-        font-size: 1.3em;
-        margin-bottom: -18px;
-    }
-    h1.info-2 {
-        color: var(--normal-blue);
-        font-size: 3em;
-    }
-}
-
-@media (max-width: 400px){
-    h1.info-2 {
-    font-size: 2.8em;
-    }
-}
 
 
 
@@ -453,6 +346,7 @@ section.events {
         grid-template-rows: 45% auto;
         grid-template-columns: auto;
     }
+
     .card {
         box-shadow: 0 0 25px #000;
         height: 55vh;
@@ -503,14 +397,6 @@ section.events {
     }
 }
 
-@media (max-width:450px){
-    .event-name {
-        font-size: 2rem !important;
-    }
-}
-
-
-
 #card-1{
     background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(https://cdn.bhdw.net/im/playerunknown-s-battlegrounds-pubg-mobile-helmet-guy-wallpaper-63408_w635.webp);
 }
@@ -554,4 +440,238 @@ section.events {
 
 button.btn.card1-btn {
     margin-block-start: -5px;
+}
+
+
+/* ----------------------------------------------------------------------Responsive */
+
+
+
+@media (max-width:1440px){
+    h1.info-2 {
+        font-size: 4.5rem;
+        line-height: 15vh;
+    }
+
+   @media (max-width:1250px) {
+        h1.info-2 {
+        font-size: 4rem;
+        }
+
+        h3.info-1 {
+            font-size: 1.2em;
+            margin-bottom: 2px;
+        }
+
+        img.cod-img {
+            height: 80vh;
+            width: 40vw;
+        }
+   }
+
+   @media (max-width:1100px){
+    h1.info-2 {
+        font-size: 3.5rem;
+    }
+    p.info-3 {
+        letter-spacing: 0.1px;
+    }
+    .launch-time div p {
+        font-size: 45px;
+    }
+   }
+}
+
+
+
+@media (max-width:1020px){
+    h3.info-1 {
+        font-size: 1.25em;
+        margin-bottom: 16px;
+    }
+    h1.info-2 {
+        font-size: 4.5em;
+        letter-spacing: 2px;
+        line-height: 1;
+        margin-bottom: 0.2em;
+    }
+    img.cod-img {
+        height: 80vh;
+        width: 44vw;
+        padding-bottom: 5em;
+    }
+    p.info-3 {
+        font-size: 1.2em;
+        margin-top: -25px;
+        padding-left: 0px;
+        letter-spacing: 0.4px;
+    }
+    section.landing-page {
+        padding-block-start: 3em;
+    }
+    h3.info-1 {
+        font-size: 1.25em;
+        margin-bottom: 16px;
+    }
+
+    .event-info > ul > li {
+        display: none;
+    }
+
+    .event-info {
+        padding: 1em 1em 1em 0;
+    }
+
+    .event-name {
+        font-size: 2.5rem;
+    }
+
+    #p-clr {
+        font-size: 1.1rem;
+    }
+
+    @media (max-width:920px){
+        img.cod-img {
+            display: none;
+        }
+        .landing-grid {
+            display: grid;
+            grid-template-columns: 90% auto;
+        }
+    }
+}
+
+@media (max-width:600px){
+    section.landing-page {
+        padding-block-start: 3em;
+        padding-inline-start: 0rem;
+    }
+    .card1-content {
+        padding: 0;
+        text-align: center;
+    }
+
+    #card-5 > .card1-content > #event-name{
+        font-size: 2.2rem;
+        margin-bottom: -1em;
+    }
+
+    .card {
+        margin-bottom: 10%;
+        margin: 5em 2em auto auto;
+    }
+
+    .event-title {
+        padding-block-start: 1em;
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width:450px){
+    h2.logo-text {
+        font-size: 2.2em;
+    }
+
+    .launch-time div p {
+        font-size: 40px;
+    }
+
+    #card-3 .card1-content {
+        margin-top: -4em;
+    }
+
+    .launch-time {
+        display: flex;
+        margin: -20px;
+    }
+
+}
+
+@media (max-width:390px)
+{
+    h2.logo-text {
+        font-size: 2em;
+    }
+
+    h3.info-1 {
+        font-size: 1.2em;
+        margin-bottom: 16px;
+    }
+    h1.info-2 {
+        font-size: 3.8em;
+        letter-spacing: 2px;
+        line-height: 1;
+        margin-bottom: 0.2em;
+    }
+    .calender-con {
+        margin-inline-start: 0;
+    }
+
+    .launch-time div p {
+        font-size: 2rem;
+    }
+
+    span.dot {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin: 5em 1em auto auto;
+    }
+}
+
+@media (max-width:375px){
+    h1.info-2 {
+        font-size: 3.2em;
+    }
+    p.info-3 {
+        letter-spacing: -0.6px;
+    }
+}
+
+@media (max-width:355px){
+    .launch-time div {
+        margin-inline: 3px;
+    }
+}
+
+@media (max-width:338px){
+    #event-name {
+        color: var(--light-blue);
+        font-size: 2rem;
+    }
+    #card-5 > .card1-content > #event-name {
+        font-size: 1.5rem;
+        margin-bottom: -1em;
+    }
+}
+
+@media (max-width:310px){
+    h1.info-2 {
+        font-size: 2.8em;
+        margin-bottom: 18px;
+    }
+
+    h3.info-1 {
+        font-size: 1em;
+        margin-bottom: 16px;
+    }
+    p.info-3 {
+        letter-spacing: 0.4px;
+        font-size: 1em;
+    }
+
+    .calender-con {
+        padding: 1.5em 0px 2em 0;
+        font-size: 1.2rem;
+    }
+
+    .launch-time div {
+        margin-inline: -4px;
+    }
+
+    .launch-time div p {
+        font-size: 1.8rem;
+    }
+       
 }
