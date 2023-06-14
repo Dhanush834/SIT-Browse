@@ -421,7 +421,7 @@ section.events {
 }
 
 #card-3 {
-    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url('/imgs/syber.svg');
+    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url('imgs/syber.svg');
 }
 
 #card-4 {
@@ -429,7 +429,7 @@ section.events {
 }
 
 #card-5 {
-    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url(/imgs/presentation.svg);
+    background-image: linear-gradient(to right, transparent -10em, var(--card-clr) 66%), url('imgs/presentation.svg');
 }
 
 .event-name {
